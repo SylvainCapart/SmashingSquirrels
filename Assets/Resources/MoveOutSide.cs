@@ -10,6 +10,7 @@ public class MoveOutSide : MonoBehaviour {
     private bool right;
 
 	// Use this for initialization
+
 	void Start () {
         left = false;
         right = false;
