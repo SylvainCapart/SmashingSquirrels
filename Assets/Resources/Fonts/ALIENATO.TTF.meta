@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ef0987c3c7e25b54e89025f24145033b
+timeCreated: 1516996653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Alienator
+  fontNames:
+  - Alienator
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

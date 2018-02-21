@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c228d61a15fc44b4e906771ebb2ddc4e
+timeCreated: 1519067203
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Komika Title - Tilt
+  fontNames:
+  - Komika Title - Tilt
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

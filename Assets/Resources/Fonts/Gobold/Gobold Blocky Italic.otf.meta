@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9f995f31fe334354686100f08aaa207b
+timeCreated: 1519067698
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gobold Blocky
+  fontNames:
+  - Gobold Blocky
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 226c5dd31a5d96f4c8a9663aa61394b2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

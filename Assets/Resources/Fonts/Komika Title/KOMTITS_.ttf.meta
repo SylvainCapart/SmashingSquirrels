@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f29820dbad20e5142a4419c73f0ffdee
+timeCreated: 1519067203
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Komika Title - Shadow
+  fontNames:
+  - Komika Title - Shadow
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Squirrel
+  - Wall
+  - PoppingSquirrel
+  - FastSquirrel
+  - GoldSquirrel
   layers:
   - Default
   - TransparentFX
