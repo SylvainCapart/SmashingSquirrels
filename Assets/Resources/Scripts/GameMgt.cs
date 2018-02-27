@@ -15,6 +15,7 @@ public class GameMgt : MonoBehaviour
         COUNT
     }
 
+
     public GameStateEnum m_gameState;
 
     public GameStateEnum GameState

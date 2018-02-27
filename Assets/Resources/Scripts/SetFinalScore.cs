@@ -10,6 +10,8 @@ public class SetFinalScore : MonoBehaviour {
         if (gameMgt)
             this.GetComponent<Text>().text = "SCORE : " + gameMgt.GetComponent<GameMgt>().Score.ToString();
 
+        Destroy(gameMgt);
+
     }
 	
 	// Update is called once per frame

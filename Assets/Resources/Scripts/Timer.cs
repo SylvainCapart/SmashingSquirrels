@@ -1,4 +1,5 @@
 ﻿
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -38,8 +39,12 @@ public class Timer : MonoBehaviour {
         {
             timeLeft = 0f;
             GameObject.Find("GameMgt").GetComponent<GameMgt>().SetGameState(GameMgt.GameStateEnum.IDLE);
+            transform.Find("FinishedText").gameObject.SetActive(true);
+            GameObject.Find("GameMgt").GetComponent<SceneChanger>().chooseSceneWithDelay(Globals.SceneIndex.END, 2f);
+
         }
         timeText.text = "Time left :\n " + timeLeft.ToString("0");
 
     }
+
 }

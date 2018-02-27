@@ -201,14 +201,14 @@ public class fastSquirrelController : MonoBehaviour
     void changeSquirrelDirection(Direction oldDirection)
     {
         int whileSecurity = 0;
-        while (goWhere == oldDirection && whileSecurity < 100)
-        {
+        //while (goWhere == oldDirection && whileSecurity < 100)
+        //{
             Array values = Enum.GetValues(typeof(Direction));
             System.Random random = new System.Random();
             goWhere = (Direction)values.GetValue(random.Next(values.Length));
             //Debug.Log("NEW DIR : " + (int)goWhere);
-            whileSecurity++;
-        }
+         //   whileSecurity++;
+        //}
     }
 
     void forceDirection(Direction newDir)

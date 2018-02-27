@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   squirrelDuration: 0.7
+  isDisappearActive: 1
 --- !u!114 &114677017237954528
 MonoBehaviour:
   m_ObjectHideFlags: 1

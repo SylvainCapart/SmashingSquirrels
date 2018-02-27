@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 222135357219177888}
   - component: {fileID: 114093849793818286}
   - component: {fileID: 114169240407283644}
+  - component: {fileID: 114643026740805368}
+  - component: {fileID: 114858529769551420}
   m_Layer: 5
   m_Name: ButtonIntro
   m_TagString: Untagged
@@ -112,7 +114,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114093849793818286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114858529769551420}
+        m_MethodName: WhiteOutActivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114643026740805368}
+        m_MethodName: goToScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114301767757887764
@@ -148,6 +172,32 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Intro
+--- !u!114 &114643026740805368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1273967643461208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7782c7657c145574d9da1663cdd7347a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_delay: 2
+  m_sceneTarget: 1
+--- !u!114 &114858529769551420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1273967643461208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3edcf46428a624b960bbb96987764c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteOutSprite: {fileID: 0}
+  whiteOutPanel: {fileID: 0}
 --- !u!222 &222135357219177888
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -174,10 +224,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -84.30001, y: -138.80002}
-  m_SizeDelta: {x: 201.8, y: 108.8}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -92.6, y: 70.6}
+  m_SizeDelta: {x: 235.1, y: 114.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224503324554461696
 RectTransform:

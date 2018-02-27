@@ -11,6 +11,14 @@ public static class Globals {
     public const float PRECOUNT_DURATION = 3f;
     public const float NET_ANIM_DURATION = 0.08f;
 
+    public enum SceneIndex
+    {
+        MENU,
+        INTRO,
+        GAME,
+        END
+    }
+
 }
 
 
