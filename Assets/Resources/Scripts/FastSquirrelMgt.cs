@@ -15,6 +15,7 @@ public class FastSquirrelMgt : MonoBehaviour {
     public float poppingSpeed = 1f;
     private GameObject squirrel;
     private GameObject goldSquirrel;
+    
     private Vector3 lastSquirrelPos;
 
     public float MAX_X = 500f;
@@ -35,7 +36,7 @@ public class FastSquirrelMgt : MonoBehaviour {
         squirrel = (GameObject)Resources.Load("Prefab/FastSquirrel", typeof(GameObject));
 
         goldSquirrel = (GameObject)Resources.Load("Prefab/GoldSquirrel", typeof(GameObject));
-
+        
         lastSquirrelPos = Vector3.zero;
     }
 	
@@ -45,7 +46,7 @@ public class FastSquirrelMgt : MonoBehaviour {
         {
             GameObject tempSquirrel;
             tempSquirrel = Instantiate(goldSquirrel, Vector3.zero, Quaternion.identity, GameObject.Find("BackgroundMain").transform);
-            tempSquirrel.transform.position = tempSquirrel.transform.parent.transform.position + new Vector3(1,0, 0);
+            tempSquirrel.transform.position = tempSquirrel.transform.parent.transform.position + new Vector3(1,0,0);
             goldSquirrelPresent = true;
         }
 

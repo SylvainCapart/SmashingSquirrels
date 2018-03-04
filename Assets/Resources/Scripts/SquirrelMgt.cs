@@ -15,6 +15,7 @@ public class SquirrelMgt : MonoBehaviour {
     public int maxSquirrelAllowed = 12;
     public float poppingSpeed = 0.2f;
     private GameObject squirrel;
+    private GameObject burstLeaves;
     private Vector3 lastSquirrelPos;
 
     public float MAX_X = 500f;
@@ -32,6 +33,7 @@ public class SquirrelMgt : MonoBehaviour {
         popActive = false;
         squirrelInternalCount = 0;
         squirrel = (GameObject)Resources.Load("Prefab/PoppingSquirrel", typeof(GameObject));
+        burstLeaves = (GameObject)Resources.Load("Prefab/BurstLeaves", typeof(GameObject));
         lastSquirrelPos = Vector3.zero;
     }
 	

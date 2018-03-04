@@ -45,6 +45,8 @@ public class fastSquirrelController : MonoBehaviour
     BoxCollider2D[] m_wallColliders;
     private MoveOutSide backScript;
 
+    private GameObject burstLeaves;
+
     // Use this for initialization
     void Start()
     {
@@ -79,7 +81,7 @@ public class fastSquirrelController : MonoBehaviour
 
 
         backScript = GameObject.Find("BackgroundMain").GetComponent<MoveOutSide>();
-
+        burstLeaves = (GameObject)Resources.Load("Prefab/BurstLeaves", typeof(GameObject));
     }
 
     // Update is called once per frame
@@ -95,6 +97,14 @@ public class fastSquirrelController : MonoBehaviour
         if (disappearActive && (Time.time - squirrelCreationTime) > squirrelDuration)
         {
             FastSquirrelMgt.squirrelCount--;
+            if (burstLeaves)
+            {
+                GameObject explosion;
+                explosion = Instantiate(burstLeaves, transform.position, Quaternion.identity);
+                //explosion = Instantiate(m_explosionRed, transform.position, Quaternion.identity);
+                explosion.transform.SetParent(GameObject.Find("BackgroundMain").transform);
+                explosion.transform.localScale = new Vector3(2, 2, 2);
+            }
             DestroyObject(gameObject);
         }
     }
